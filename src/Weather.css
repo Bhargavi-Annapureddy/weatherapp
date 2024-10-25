@@ -1,0 +1,133 @@
+.weather-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+input {
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 6px 12px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkorange;
+}
+
+.loader {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.weather-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.weather-card {
+  background-color: #f3f3f3;
+  border: 2px solid #ccc;
+  width: 200px;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+
+h3 {
+  color: orange;
+  font-size: 16px;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .weather-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weather-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.weather-card {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.date {
+  background-color: orange;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+table {
+  width: 100%;
+}
+
+.temperature-label {
+  background-color: #e0e0e0;
+  color: black;
+  text-align: center;
+  padding: 5px;
+}
+
+.temperature-value {
+  text-align: center;
+  background-color: #e0e0e0;
+  padding: 5px;
+}
+
+.label {
+  text-align: left;
+  background-color: white;
+  text-align: center;
+}
+
+.value {
+  text-align: right;
+  background-color: #e0e0e0;
+  padding: 5px;
+}
